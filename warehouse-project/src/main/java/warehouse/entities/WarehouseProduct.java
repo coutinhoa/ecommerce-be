@@ -1,11 +1,10 @@
 package warehouse.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.Hibernate;
 
-import java.util.Collection;
+import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
@@ -59,13 +58,9 @@ public class WarehouseProduct {
     @ToString.Exclude
     private Set<Review> reviews;
 
-
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JsonIgnore
-    @JoinTable(name = "garmentsizes", joinColumns = @JoinColumn(name = "garment_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "size_id", referencedColumnName = "id"))
+    @OneToMany(mappedBy = "garment")
     @ToString.Exclude
-    //Set < Sizes > sizes = new HashSet< Sizes >();
-    private Collection<Size> sizes;
+    private List<GarmentSize> garmentSizes;
 
     @Override
     public boolean equals(Object o) {

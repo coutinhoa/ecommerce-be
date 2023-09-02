@@ -3,8 +3,6 @@ package warehouse.dto;
 import lombok.*;
 
 import java.io.Serializable;
-import java.util.Collection;
-import java.util.Set;
 
 
 @Data
@@ -28,7 +26,4 @@ public class WarehouseProductDTO implements Serializable {
 
     private int availableQuantity;
 
-    private Set<PictureDTO> pictures;
-    private Set<ReviewDTO> reviews;
-    private Collection<SizeDTO> sizes;
 }

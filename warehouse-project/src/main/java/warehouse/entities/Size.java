@@ -4,9 +4,8 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.Hibernate;
 
-import java.util.HashSet;
+import java.util.List;
 import java.util.Objects;
-import java.util.Set;
 
 import static jakarta.persistence.GenerationType.IDENTITY;
 
@@ -22,14 +21,14 @@ public class Size {
     @Id
     @GeneratedValue(strategy = IDENTITY)
     private Long id;
-
     @Column(name = "sizes", nullable = false)
     @NonNull
     private String size;
 
-    @ManyToMany(mappedBy = "sizes", cascade = {CascadeType.ALL})
+
+    @OneToMany(mappedBy = "garmentSize")
     @ToString.Exclude
-    private Set<WarehouseProduct> garments = new HashSet<WarehouseProduct>();
+    private List<GarmentSize> garmentSizes;
 
     @Override
     public boolean equals(Object o) {

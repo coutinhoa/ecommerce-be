@@ -16,5 +16,6 @@ public class GarmentSizeDTO implements Serializable {
     private Long id;
     private int quantity;
 
-
+    private Long garment_id;
+    private Long size_id;
 }

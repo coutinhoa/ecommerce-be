@@ -11,6 +11,7 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Table(name = "products")
+@NoArgsConstructor
 public class Product implements Serializable {
 
     @Id
@@ -20,9 +21,31 @@ public class Product implements Serializable {
     @Column(name = "quantity", nullable = false)
     private int quantity;
 
+    @Column(name = "name", nullable = false)
+    @NonNull
+    private String name;
+
+    @Column(name = "type", nullable = false)
+    @NonNull
+    private String type;
+
+    @Column(name = "price", nullable = false)
+    private double price;
+
+    @Column(name = "colour", nullable = false)
+    @NonNull
+    private String colour;
+
+    @Column(name = "premium_delivery", nullable = false)
+    private boolean premiumDelivery;
+
+    @Column(name = "identity", nullable = false)
+    @NonNull
+    private String identity;
+
     @Column(name = "product_id", nullable = false)
     private Long productId;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="order_id", nullable = false)
+    @JoinColumn(name = "order_id", nullable = false)
     private Order order;
 }

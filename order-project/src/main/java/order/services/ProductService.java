@@ -22,7 +22,9 @@ public class ProductService {
         List<Product> products = productRepository.findAll();
         return products.stream()
                 .map(product -> new ProductDTO(product.getId(),
-                        product.getQuantity(), product.getProductId(),
+                        product.getQuantity(), product.getName(), product.getType(),
+                        product.getColour(), product.isPremiumDelivery(), product.getIdentity(),
+                        product.getProductId(),
                         product.getOrder().getId()))
                 .collect(Collectors.toList());
     }
@@ -34,7 +36,10 @@ public class ProductService {
     public List<ProductDTO> getProductsByOrderId(Long orderId) {
         List<Product> products = productRepository.findByOrderId(orderId);
         return products.stream()
-                .map(product -> new ProductDTO(product.getId(), product.getQuantity(), product.getProductId(), product.getOrder().getId()))
+                .map(product -> new ProductDTO(product.getId(), product.getQuantity(),
+                        product.getName(), product.getType(),
+                        product.getColour(), product.isPremiumDelivery(), product.getIdentity(),
+                        product.getProductId(), product.getOrder().getId()))
                 .collect(Collectors.toList());
     }
 

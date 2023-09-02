@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
 @Service
 public class ProductService {
     private final ProductRepository productRepository;
+
     @Autowired
     ProductService(ProductRepository productRepository) {
         this.productRepository = productRepository;
@@ -23,6 +24,8 @@ public class ProductService {
                 .map(product -> new ProductDTO(product.getId(),
                         product.getProductId(),
                         product.getQuantity(),
+                        product.getName(), product.getType(),
+                        product.getColour(), product.isPremiumDelivery(), product.getIdentity(),
                         product.getShopping_cart().getId()))
                 .collect(Collectors.toList());
     }

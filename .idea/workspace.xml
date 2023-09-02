@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdb63241-e43f-40f9-847c-52b8cf983d54" name="Changes" comment="" />
+    <list default="true" id="bdb63241-e43f-40f9-847c-52b8cf983d54" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project/src/main/java/order/dto/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-project/src/main/java/order/dto/ProductDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project/src/main/java/order/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-project/src/main/java/order/entities/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project/src/main/java/order/services/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-project/src/main/java/order/services/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project/src/main/java/order/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-project/src/main/java/order/services/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping-cart-project/src/main/java/shoppingCart/dto/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shopping-cart-project/src/main/java/shoppingCart/dto/ProductDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping-cart-project/src/main/java/shoppingCart/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/shopping-cart-project/src/main/java/shoppingCart/entities/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping-cart-project/src/main/java/shoppingCart/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shopping-cart-project/src/main/java/shoppingCart/services/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping-cart-project/src/main/java/shoppingCart/services/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shopping-cart-project/src/main/java/shoppingCart/services/ShoppingCartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouse-project/src/main/java/warehouse/dto/GarmentSizeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse-project/src/main/java/warehouse/dto/GarmentSizeDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouse-project/src/main/java/warehouse/dto/SizeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse-project/src/main/java/warehouse/dto/SizeDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouse-project/src/main/java/warehouse/dto/WarehouseProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse-project/src/main/java/warehouse/dto/WarehouseProductDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouse-project/src/main/java/warehouse/entities/GarmentSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse-project/src/main/java/warehouse/entities/GarmentSize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouse-project/src/main/java/warehouse/entities/Size.java" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse-project/src/main/java/warehouse/entities/Size.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouse-project/src/main/java/warehouse/entities/WarehouseProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse-project/src/main/java/warehouse/entities/WarehouseProduct.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,11 +105,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "code.cleanup.on.save": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-18",
-    "last_opened_file_path": "C:/Users/couti/Desktop/ecommerce-be",
+    "last_opened_file_path": "C:/Users/couti/Desktop/event-driven-architecture-main",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "rearrange.code.on.save": "true",
     "settings.editor.selected.configurable": "actions.on.save"
   }
 }]]></component>

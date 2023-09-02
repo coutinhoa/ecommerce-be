@@ -1,10 +1,7 @@
 package shoppingCart.entities;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.io.Serializable;
 
@@ -14,6 +11,7 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Table(name = "products")
+@NoArgsConstructor
 public class Product implements Serializable {
 
     @Id
@@ -26,7 +24,26 @@ public class Product implements Serializable {
     @Column(name = "quantity", nullable = false)
     private int quantity;
 
+    @Column(name = "name", nullable = false)
+    private String name;
+
+    @Column(name = "type", nullable = false)
+    private String type;
+
+    @Column(name = "price", nullable = false)
+    private double price;
+
+    @Column(name = "colour", nullable = false)
+    private String colour;
+
+    @Column(name = "premium_delivery", nullable = false)
+    private boolean premiumDelivery;
+
+    @Column(name = "identity", nullable = false)
+    @NonNull
+    private String identity;
+
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="shopping_cart_id", nullable = false)
+    @JoinColumn(name = "shopping_cart_id", nullable = false)
     private ShoppingCart shopping_cart;
 }

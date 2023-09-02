@@ -41,6 +41,11 @@ public class ShoppingCartService {
         for (ProductDTO productDTO : orderRequest.getProducts()) {
             Product product = new Product();
             product.setQuantity(productDTO.getQuantity());
+            product.setName(productDTO.getName());
+            product.setType(productDTO.getType());
+            product.setColour(productDTO.getColour());
+            product.setPremiumDelivery(productDTO.isPremiumDelivery());
+            product.setIdentity(productDTO.getIdentity());
             product.setProductId(productDTO.getProductId());
             product.setShopping_cart(shoppingCart);
             products.add(product);
