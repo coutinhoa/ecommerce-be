@@ -43,7 +43,7 @@ public class Product implements Serializable {
     @NonNull
     private String identity;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "shopping_cart_id", nullable = false)
     private ShoppingCart shopping_cart;
 }

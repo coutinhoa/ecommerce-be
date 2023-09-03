@@ -1,5 +1,6 @@
 package warehouse.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.Hibernate;
@@ -21,13 +22,13 @@ public class Size {
     @Id
     @GeneratedValue(strategy = IDENTITY)
     private Long id;
+
     @Column(name = "sizes", nullable = false)
     @NonNull
     private String size;
 
-
-    @OneToMany(mappedBy = "garmentSize")
-    @ToString.Exclude
+    @OneToMany(mappedBy = "size")
+    @JsonIgnore
     private List<GarmentSize> garmentSizes;
 
     @Override

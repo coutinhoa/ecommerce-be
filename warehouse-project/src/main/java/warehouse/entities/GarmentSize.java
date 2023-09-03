@@ -27,17 +27,15 @@ public class GarmentSize {
 
     @Column(name = "quantity", nullable = false)
     private int quantity;
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "garment_id", nullable = false, referencedColumnName = "id")
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore
-    @ToString.Exclude
     private WarehouseProduct garment;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "size_id", nullable = false, referencedColumnName = "id")
     @OnDelete(action = OnDeleteAction.CASCADE)
-    @JsonIgnore
-    @ToString.Exclude
-    private Size garmentSize;
+    private Size size;
+
 }

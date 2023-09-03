@@ -45,7 +45,7 @@ public class Product implements Serializable {
 
     @Column(name = "product_id", nullable = false)
     private Long productId;
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "order_id", nullable = false)
     private Order order;
 }

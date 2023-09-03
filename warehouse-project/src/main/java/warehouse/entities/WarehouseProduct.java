@@ -50,16 +50,13 @@ public class WarehouseProduct {
 
 
     @OneToMany(mappedBy = "garment")
-    @ToString.Exclude
     //cascade = CascadeType.ALL, orphanRemoval = true
     private Set<Picture> pictures;
 
     @OneToMany(mappedBy = "garment")
-    @ToString.Exclude
     private Set<Review> reviews;
 
     @OneToMany(mappedBy = "garment")
-    @ToString.Exclude
     private List<GarmentSize> garmentSizes;
 
     @Override

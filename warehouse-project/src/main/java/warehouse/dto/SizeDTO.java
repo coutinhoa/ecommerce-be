@@ -15,6 +15,7 @@ public class SizeDTO implements Serializable {
 
     private Long id;
     private String sizes;
+    //TODO: change to name;
 }
 
 
